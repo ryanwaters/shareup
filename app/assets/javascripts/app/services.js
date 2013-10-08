@@ -1,4 +1,4 @@
-angular.module('myApp.services', []);
+angular.module('myApp.services', [])
 .factory('ArticleService', function($http, $q) {
   var service = {
     getLatestFeed: function() {
@@ -10,7 +10,7 @@ angular.module('myApp.services', []);
         ).then(function(data, status) {
           // Huffpost data comes back as data.data.responseData.feed.entries
           if (data.status === 200)
-            d.resolve(data.data.responseData.feed.endtries);
+            d.resolve(data.data.responseData.feed.entries);
           else
             d.reject(data);
         });

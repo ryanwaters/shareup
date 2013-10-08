@@ -9,6 +9,7 @@ gem 'angularjs-rails', '>= 1.2.0.rc1'
 gem 'ngmin-rails'
 
 gem 'zurb-foundation'
+gem 'bootstrap-sass-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
